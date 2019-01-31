@@ -3,20 +3,17 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import Main from './views/Main.vue'
 import NotFound from './views/NotFound.vue'
-import GlobalSettions from './views/GlobalSettions'
-import TableList from './views/TableList'
-import TableAdd from './views/TableAdd'
-import TableDelete from './views/TableDelete'
-import CategoryList from './views/CategoryList'
-import CategoryAdd from './views/CategoryAdd'
-import CategoryDelete from './views/CategoryDelete'
-import CategoryUpdate from './views/CategoryUpdate'
-import DishList from './views/DishList'
-import DishAdd from './views/DishAdd'
-import DishDelete from './views/DishDelete'
-import DishUpdate from './views/DishUpdate'
-import OrderList from './views/OrderList'
-import Security from './views/Security'
+import GlobalSettions from './views/GlobalSettions.vue'
+import TableList from './views/TableList.vue'
+import TableAdd from './views/TableAdd.vue'
+import TableDelete from './views/TableDelete.vue'
+import Category from './views/Category.vue'
+import DishList from './views/DishList.vue'
+import DishAdd from './views/DishAdd.vue'
+import DishDelete from './views/DishDelete.vue'
+import DishUpdate from './views/DishUpdate.vue'
+import OrderList from './views/OrderList.vue'
+import Security from './views/Security.vue'
 
 Vue.use(Router)
 //整个项目的路由词典：访问路经<=>视图组件
@@ -32,10 +29,7 @@ export default new Router({
       {path:'/table/list',component:TableList},
       {path:'/table/add',component:TableAdd},
       {path:'/table/delete',component:TableDelete},
-      {path:'/category/list',component:CategoryList},
-      {path:'/category/add',component:CategoryAdd},
-      {path:'/category/delete',component:CategoryDelete},
-      {path:'/category/update',component:CategoryUpdate},
+      {path:'/category',component:Category},
       {path:'/dish/list',component:DishList},
       {path:'/dish/add',component:DishAdd},
       {path:'/dish/delete',component:DishDelete},
